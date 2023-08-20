@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Card</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+        <div class="card-wrapper">
+            <div>
+                <img src="profile-image.webp" alt="user">
+            </div>
+            
+            <div class="user-name">
+                <h2>Mainak Bhattacharjee</h2>
+            </div>
+
+            <div class="designation">
+                <h3>Founder, Biggest Unicorn</h3>
+            </div>
+
+            <div class="button-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                    <i class="fa-solid fa-share"></i>
+                    <div>Share my profile</div>
+                </button>
+
+                <button class="btn-follow btn-card">Follow</button>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-header">
+                <h1>Share My Profile</h1>
+                <div>
+                    <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+                </div>
+            </div>
+
+            <div>
+                <h3>Share this via</h3>
+                <div class="icon-container">
+                    <a href="https://www.facebook.com/guddu.bhattacharjee.5/" class="icon" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="icon" id="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                      <a href="https://www.instagram.com/mainak_1.0/" class="icon" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a href="https://wa.me/917005247129" class="icon" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                      </a>
+                      <a href="#" class="icon" id="telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                      </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay" onclick="closeModal()"></div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/209a6d328d.js" crossorigin="anonymous"></script>
+</body>
+</html>
